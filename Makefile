@@ -3,13 +3,13 @@ CPPFLAGS = -ansi -pedantic -Wall -Wextra -I./include
 
 .PHONY: all clean archive git
 
-all: bin  ./bin/iplot
+all: bin ./bin/iplot
 
 bin :
 	mkdir ./bin/
 
-./bin/iplot: src/iplot.cpp include/iplot.h
-	$(CXX) $^ -o $@ $(CPPFLAGS)
+./bin/iplot: src/iplot.c include/iplot.h src/main.c
+	$(CC) $^ -o $@ $(CPPFLAGS)
 
 clean:
 	find . -type f -name '*.o' -exec rm {} +
@@ -19,7 +19,7 @@ clean:
 
 archive:
 	make -i clean
-	tar -czvf HUBERT_TP1_OS.tar ./*
+	zip -r HUBERT_TP1_OS.zip ./*
 
 git:
 	make -i clean
