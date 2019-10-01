@@ -1,4 +1,4 @@
-set xrange [-8:150]
+set xrange [-12:25]
 set samples 500
 set title "Sinc function"
 set xlabel "x"

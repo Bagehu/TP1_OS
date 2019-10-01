@@ -30,7 +30,7 @@ int writeCommands(int* boundaries) {
 
 void manage_parent(int* boundaries) {
   writeCommands(boundaries);
-  sleep(1);
+  sleep(0.5);
 }
 
 void manage_child() {

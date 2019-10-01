@@ -1,3 +1,3 @@
-## C++ Lab 2
-### Arthur ROUILLE & Bastien HUBERT
+## OS Lab 2
+### Bastien HUBERT
 
