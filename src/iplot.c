@@ -35,6 +35,6 @@ void manage_parent(int* boundaries) {
 
 void manage_child() {
   execlp("gnuplot", "gnuplot", "-persist", "./etc/commands.gp", NULL);
-  sleep(0.5);
+  /*  sleep(0.5);*/
   exit(EXIT_SUCCESS);
 }
