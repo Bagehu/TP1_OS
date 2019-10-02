@@ -1,4 +1,4 @@
-/* TP1 - Bastien HUBERT */
+/* Lab 1 - Bastien HUBERT */
 
 #ifndef __IPLOT_H__
 #define __IPLOT_H__
